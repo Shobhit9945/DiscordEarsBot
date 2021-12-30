@@ -162,8 +162,8 @@ discordClient.on('ready', () => {
 })
 discordClient.login(DISCORD_TOK)
 
-const PREFIX = '*';
-const _CMD_HELP        = PREFIX + 'help';
+const PREFIX = 'sb!';
+const _CMD_HELP        = PREFIX + 'stthelp';
 const _CMD_JOIN        = PREFIX + 'join';
 const _CMD_LEAVE       = PREFIX + 'leave';
 const _CMD_DEBUG       = PREFIX + 'debug';
@@ -293,7 +293,7 @@ if (SPEECH_METHOD === 'vosk') {
   // MODELS: https://alphacephei.com/vosk/models
   recs = {
     'en': new vosk.Recognizer({model: new vosk.Model('vosk_models/en'), sampleRate: 48000}),
-    // 'fr': new vosk.Recognizer({model: new vosk.Model('vosk_models/fr'), sampleRate: 48000}),
+     'en-in': new vosk.Recognizer({model: new vosk.Model('vosk_models/vosk-model-small-en-in-0.4'), sampleRate: 48000}),
     // 'es': new vosk.Recognizer({model: new vosk.Model('vosk_models/es'), sampleRate: 48000}),
   }
   // download new models if you need
