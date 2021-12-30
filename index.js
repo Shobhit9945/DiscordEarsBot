@@ -235,7 +235,7 @@ discordClient.on('message', async (msg) => {
         }
     } catch (e) {
         console.log('discordClient message: ' + e)
-        msg.reply('Error#180: Something went wrong, try again or contact the developers if this keeps happening.');
+        msg.reply('Error#180: Something went wrong');
     }
 })
 
